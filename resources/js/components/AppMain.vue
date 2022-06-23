@@ -1,7 +1,7 @@
 <template>
-    <div>
-        <h1>{{titolo}}</h1>
-        <h1>{{sottotitolo}}</h1>
+    <div class="text-center">
+        <h1>BOOLPRESS</h1>
+        <a href="admin/posts">Vai ai post</a>
     </div>
 </template>
 
@@ -10,8 +10,7 @@ export default {
     name: 'AppMain',
     data(){
         return{
-            'titolo': 'Work In Progress',
-            'sottotitolo': 'Sito in costruzione',
+            
         }
     }
 }

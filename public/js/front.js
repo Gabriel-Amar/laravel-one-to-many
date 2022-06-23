@@ -1918,10 +1918,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'AppMain',
   data: function data() {
-    return {
-      'titolo': 'Work In Progress',
-      'sottotitolo': 'Sito in costruzione'
-    };
+    return {};
   }
 });
 
@@ -1937,7 +1934,6 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_AppMain_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/AppMain.vue */ "./resources/js/components/AppMain.vue");
-//
 //
 //
 //
@@ -37540,13 +37536,20 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("h1", [_vm._v(_vm._s(_vm.titolo))]),
-    _vm._v(" "),
-    _c("h1", [_vm._v(_vm._s(_vm.sottotitolo))]),
-  ])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "text-center" }, [
+      _c("h1", [_vm._v("BOOLPRESS")]),
+      _vm._v(" "),
+      _c("a", { attrs: { href: "admin/posts" } }, [_vm._v("Vai ai post")]),
+    ])
+  },
+]
 render._withStripped = true
 
 
@@ -37568,15 +37571,7 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    [
-      _c("app-main"),
-      _vm._v(" "),
-      _c("a", { attrs: { href: "admin/posts" } }, [_vm._v("Vai ai post")]),
-    ],
-    1
-  )
+  return _c("div", [_c("app-main")], 1)
 }
 var staticRenderFns = []
 render._withStripped = true
